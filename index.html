@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validacion.js" defer></script>
+
+</head>
+
+<body>
+    <h1>Solicitud de Traslado</h1>
+
+    <form id="formTraslado">
+        <label for="conductor">Conductor</label>
+        <input type="text" id="conductor">
+        <p id="errorConductor"></p>
+
+        <label for="origen">Origen</label>
+        <input type="text" id="origen">
+        <p id="errorOrigen"></p>
+
+        <label for="destino">Destino</label>
+        <input type="text" id="destino">
+        <p id="errorDestino"></p>
+
+        <label for="horaSalida">
+            Hora de salida</label>
+        <input type="time" id="horaSalida">
+        <p id="errorHora"></p>
+
+        <button type="submit">
+            Registrar traslado</button>
+    </form>
+
+</body>
+</html>

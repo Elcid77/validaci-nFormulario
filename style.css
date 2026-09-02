@@ -1,0 +1,100 @@
+/* ==========================================================
+   1. ESTILOS BASE DEL FORMULARIO
+   ========================================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#formTraslado {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+#formTraslado label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+    font-size: 14px;
+}
+
+#formTraslado input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#formTraslado input:focus {
+    border-color: #0066cc;
+}
+
+/* Párrafos de error ocultos por defecto */
+#formTraslado p {
+    margin: 4px 0 0 0;
+    font-size: 12px;
+    color: #d9534f;
+    display: none; /* Se activa dinámicamente con JS */
+}
+
+/* ==========================================================
+   2. CLASES PARA ACTIVAR CON JAVASCRIPT (DOM)
+   ========================================================== */
+
+/* Se aplica al input cuando no pasa la validación */
+.input-error {
+    border-color: #d9534f !important;
+    background-color: #fdf2f2;
+}
+
+/* Se aplica al input cuando es válido */
+.input-success {
+    border-color: #5cb85c !important;
+    background-color: #f4faf4;
+}
+
+/* Muestra el mensaje de error correspondiente al párrafo */
+.error-message-active {
+    display: block !important;
+}
+
+/* ==========================================================
+   3. BOTÓN DE ENVÍO
+   ========================================================== */
+#formTraslado button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #0066cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formTraslado button:hover {
+    background-color: #004b99;
+}
